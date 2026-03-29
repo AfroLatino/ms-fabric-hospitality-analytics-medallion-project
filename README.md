@@ -22,10 +22,10 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 
 | Component | Purpose |
 |-----------|---------|
+| CSV / Text Files | Source datasets: sales, labour, inventory, reviews |
 | Microsoft Fabric (OneLake, Lakehouse, Pipelines) | Data ingestion, storage, transformation, orchestration |
 | PySpark | Data processing and transformations |
 | Power BI | Visualisation of Gold layer metrics |
-| CSV / Text Files | Source datasets: sales, labour, inventory, reviews |
 
 # Project Overview
 
