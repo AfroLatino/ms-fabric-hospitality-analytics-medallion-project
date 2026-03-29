@@ -54,15 +54,15 @@ The datasets are included in the `datasets/` folder:
 
 **Pipelines:** Bronze ingestion pipeline from OneLake → Bronze tables.  
 
-![Medallion Architecture](staging.png)
+![Medallion Architecture](images/staging.png)
 
 **Lakehouse:** Tables for Bronze, Silver, Gold with schema and sample data.  
 
-![Medallion Architecture](lakehouse.png)
+![Medallion Architecture](images/lakehouse.png)
 
 **Dashboard:** Power BI report with KPI Cards, Matrix, Column and Waterfall charts.  
 
-![Medallion Architecture](PBIReport.png)
+![Medallion Architecture](reports/PBIReport.png)
 
 # Project Structure
 
