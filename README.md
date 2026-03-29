@@ -62,20 +62,25 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 ```ms-fabric-medallion-project/
 │
 ├─ README.md
-├─ datasets/
+│
+├─ datasets/ Raw input files
 │ ├─ sales.csv
 │ ├─ labour.csv
 │ ├─ reviews.csv
 │ └─ inventory.csv
-├─ notebooks/
-│ ├─ bronze_ingestion.ipynb
+│
+├─ pipelines/ Data ingestion (Bronze layer)
+│ └─ bronze_pipeline.json
+│
+├─ notebooks/ Data transformations
 │ ├─ silver_transforms.ipynb
 │ └─ gold_aggregation.ipynb
-├─ pipelines/
-│ └─ bronze_pipeline.json
-└─ reports/
-└─ powerbi/
-└─ gold_metrics.pbix
-
+│
+├─ reports/ Power BI dashboard
+│ └─ powerbi/
+│ └─ gold_metrics.pbix
+│
+└─ images/ Architecture diagram
+└─ architecture.png
 
 
