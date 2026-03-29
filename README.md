@@ -52,18 +52,18 @@ Bronze (Raw) → Silver (Cleaned) → Gold (Aggregated) → Power BI Dashboards
 
 From the Gold layer and dashboards, we can highlight:
 
-1) Labour Cost % vs Revenue
+**Labour Cost % vs Revenue**
  - Locations where labour cost is disproportionately high (e.g., MCR01 on 2025-01-01: -£116 profit).
  - This helps to optimise staffing and scheduling.
 
-2) Profitability Analysis
+**Profitability Analysis**
  - Identifies underperforming locations/days and take corrective action.
  - Gold metrics allow daily profit monitoring.
 
-3) Waste and Inventory Impact
+**Waste and Inventory Impact**
 - Low stock or inventory mismanagement reflected in sales and profitability trends.
 - Combined with labour costs, shows overall operational efficiency.
 
-4) Daily Performance Monitoring
+**Daily Performance Monitoring**
 - Tracks total revenue, labour cost, and profit by location/day.
 - Enables quick decisions and performance comparisons across stores.
