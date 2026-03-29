@@ -16,31 +16,8 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 
 # Architecture
 
-      +------------------------+
-      |      Power BI / Apps   |
-      |  (Business Dashboard)  |
-      +-----------+------------+
-                  |
-            +-----v-----+
-            |   Gold    |
-            | Aggregated|
-            |  Metrics  |
-            +-----+-----+
-                  |
-            +-----v-----+
-            |  Silver   |
-            | Cleaned & |
-            | Standard  |
-            +-----+-----+
-                  |
-            +-----v-----+
-            |  Bronze   |
-            |  Raw Data |
-            +-----------+
-
 ![Medallion Architecture](architecture.png)
 
- architecture.png
  
 # Tech Stack 
 - Microsoft Fabric
