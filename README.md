@@ -19,9 +19,61 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 ![Medallion Architecture](architecture.png)
 
 # Tech Stack 
-- Microsoft Fabric
+- Microsoft Fabric (OneLake, Lakehouse, Pipelines)
 - PySpark
 - Power BI
+
+
+
+**Layer Explanation:**
+
+- **Bronze:** Raw data ingestion, minimal transformation.  
+- **Silver:** Cleaned and standardized, duplicates removed, invalid values filtered.  
+- **Gold:** Aggregated business metrics: `total_revenue`, `total_labour_cost`, `profit`.  
+
+---
+
+## 3. Tech Stack
+
+| Component | Purpose |
+|-----------|---------|
+| Microsoft Fabric (OneLake, Lakehouse, Pipelines) | Data ingestion, storage, transformation, orchestration |
+| PySpark | Data processing and transformations |
+| Power BI | Visualization of Gold layer metrics |
+| CSV / Text Files | Source datasets: sales, labour, inventory, reviews |
+| Optional APIs / HTTP connectors | Future data ingestion |
+
+---
+
+## 4. Medallion Design
+
+**Bronze Layer (Raw Data):** Preserve original CSVs, minimal changes.  
+**Silver Layer (Cleaned / Standardized):** Remove duplicates, fix nulls, standardize types.  
+**Gold Layer (Aggregated Metrics):** Business-ready table for dashboards (`total_revenue`, `total_labour_cost`, `profit`).  
+
+**Flow:**  
+`Bronze → Silver → Gold → Power BI Dashboards`
+
+---
+
+## 5. Key Insights
+
+1. **Labour Cost % vs Revenue** – Identify high labour cost locations/days.  
+2. **Profitability Analysis** – Monitor negative profit and underperforming locations.  
+3. **Waste & Inventory Impact** – Connect stock usage to margin impact.  
+4. **Daily Performance Monitoring** – Track revenue, labour, and profit per location/day.  
+
+---
+
+## 6. Screenshots
+
+**Pipelines:** Bronze ingestion pipeline from OneLake → Bronze tables.  
+**Lakehouse:** Tables for Bronze, Silver, Gold with schema and sample data.  
+**Dashboard:** Power BI report with KPI Cards, Matrix, Column and Waterfall charts.  
+
+---
+
+## 7. Folder Structure
 
 # Medallion Design 
 
