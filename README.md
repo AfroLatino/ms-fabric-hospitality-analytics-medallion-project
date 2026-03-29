@@ -27,14 +27,21 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 | Power BI | Visualisation of Gold layer metrics |
 | CSV / Text Files | Source datasets: sales, labour, inventory, reviews |
 
-# Medallion Design
+# Project Overview
 
-**Bronze Layer (Raw Data):** Preserves original CSVs, minimal changes.  
-**Silver Layer (Cleaned / Standardized):** Remove duplicates, fix nulls, standardise types.  
-**Gold Layer (Aggregated Metrics):** Business-ready table for dashboards (`total_revenue`, `total_labour_cost`, `profit`).  
+This project demonstrates an **end-to-end Medallion architecture** in Microsoft Fabric:
 
-**Flow:**  
-`Bronze → Silver → Gold → Power BI Dashboards`
+- Bronze Layer: Raw CSV ingestion for Sales, Labour, Reviews, Inventory
+- Silver Layer: Data cleaning, de-duplication, type standardization
+- Gold Layer: Aggregated business metrics (`total_revenue`, `total_labour_cost`, `profit`) per `date` and `location_id`
+- Power BI Report: Interactive dashboard for daily performance metrics
+
+# Datasets
+The datasets are included in the `datasets/` folder:
+- `sales.csv` — transactional sales data
+- `labour.csv` — employee work hours
+- `reviews.csv` — customer feedback
+- `inventory.csv` — stock levels
 
 # Key Insights
 
@@ -93,14 +100,21 @@ Retail locations struggle to monitor daily operational efficiency because sales 
    - Output: Bronze tables (`bronze_sales`, `bronze_labour`, `bronze_reviews`, `bronze_inventory`)
 
 3. Run Silver transformations:
-   - Execute `silver_transforms.ipynb`
+   - Execute `silver_transformations.ipynb`
    - Cleans data (removes duplicates, filters invalid values)
 
 4. Run Gold aggregation:
-   - Execute `gold_aggregation.ipynb`
+   - Execute `gold_aggregations.ipynb`
    - Output table: `gold_daily_metrics`
 
 5. Open Power BI report:
-   - Load `gold_metrics.pbix`
    - Connect to `gold_daily_metrics`
-   - View dashboard visuals
+   - Build Power BI report using KPI cards, table/matrix, clustered column chart and waterfall chart
+
+# Notes
+
+- This project demonstrates a simplified Medallion Architecture using small datasets for clarity.
+- Gold layer currently contains 4 aggregated rows for demonstration purposes.
+- In a real-world scenario, datasets would be significantly larger and ingested via pipelines or APIs.
+- The architecture is scalable — additional data sources (APIs, streaming, etc.) can be integrated into the Bronze layer.
+- Power BI dashboard is designed to highlight key business KPIs such as revenue, labour cost, and profitability.
