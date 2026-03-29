@@ -84,7 +84,6 @@ The datasets are included in the `datasets/` folder:
 │ └─ gold_aggregation.ipynb
 │
 ├─ reports/ Power BI dashboard
-│ └─ powerbi/
 │ └─ gold_metrics.pbix
 │
 └─ images/ Architecture diagram
@@ -108,13 +107,14 @@ The datasets are included in the `datasets/` folder:
    - Output table: `gold_daily_metrics`
 
 5. Open Power BI report:
+   - Load `gold_metrics.pbix`
    - Connect to `gold_daily_metrics`
-   - Build Power BI report using KPI cards, table/matrix, clustered column chart and waterfall chart
-
+   - View dashboard visuals
+   
 # Notes
 
 - This project demonstrates a simplified Medallion Architecture using small datasets for clarity.
 - Gold layer currently contains 4 aggregated rows for demonstration purposes.
 - In a real-world scenario, datasets would be significantly larger and ingested via pipelines or APIs.
 - The architecture is scalable — additional data sources (APIs, streaming, etc.) can be integrated into the Bronze layer.
-- Power BI dashboard is designed to highlight key business KPIs such as revenue, labour cost, and profitability.
+- Power BI dashboard is designed to highlight key business KPIs such as revenue, labour cost and profitability.
