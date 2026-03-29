@@ -48,8 +48,14 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 **Pipelines:** Bronze ingestion pipeline from OneLake → Bronze tables.  
 
 ![Medallion Architecture](staging.png)
+
 **Lakehouse:** Tables for Bronze, Silver, Gold with schema and sample data.  
+
+![Medallion Architecture](lakehouse.png)
+
 **Dashboard:** Power BI report with KPI Cards, Matrix, Column and Waterfall charts.  
+
+![Medallion Architecture](PBIReport.png)
 
 ---
 
