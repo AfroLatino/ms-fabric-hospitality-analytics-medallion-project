@@ -16,7 +16,7 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 
 # Architecture
 
-![Medallion Architecture](architecture.png)
+![Medallion Architecture](images/architecture.png)
 
 # Tech Stack
 
@@ -66,28 +66,29 @@ The datasets are included in the `datasets/` folder:
 
 # Project Structure
 
-```ms-fabric-medallion-project/
-│
-├─ README.md
+```
+ms-fabric-hospitality-analytics-medallion-project/
 │
 ├─ datasets/ Raw input files
-│ ├─ sales.csv
-│ ├─ labour.csv
-│ ├─ reviews.csv
-│ └─ inventory.csv
+│   ├─ sales.csv
+│   ├─ reviews.csv
+│   ├─ labour.csv
+│   └─ inventory.csv
 │
-├─ pipelines/ Data ingestion (Bronze layer)
-│ └─ bronze_pipeline.json
+├─ images/ Architecture diagram
+│   └─ architecture.png
 │
 ├─ notebooks/ Data transformations
-│ ├─ silver_transforms.ipynb
-│ └─ gold_aggregation.ipynb
+│   ├─ silver_transformations.ipynb
+│   └─ gold_aggregations.ipynb
+│
+├─ pipelines/ Data ingestion (Bronze layer)
+│   └─ bronze_pipeline.json
 │
 ├─ reports/ Power BI dashboard
-│ └─ gold_metrics.pbix
+│   └─ gold_metrics.pbix
 │
-└─ images/ Architecture diagram
-└─ architecture.png
+└─ README.md
 ```
 
 # Steps to Reproduce
