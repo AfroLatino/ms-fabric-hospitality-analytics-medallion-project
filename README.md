@@ -59,7 +59,7 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 
 # Project Structure
 
-ms-fabric-medallion-project/
+```ms-fabric-medallion-project/
 │
 ├─ README.md
 ├─ datasets/
@@ -76,5 +76,6 @@ ms-fabric-medallion-project/
 └─ reports/
 └─ powerbi/
 └─ gold_metrics.pbix
+
 
 
