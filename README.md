@@ -38,6 +38,7 @@ Retail locations struggle to monitor daily operational efficiency because sales 
             |  Raw Data |
             +-----------+
 
+![Medallion Architecture](architecture.png)
 
  architecture.png
  
