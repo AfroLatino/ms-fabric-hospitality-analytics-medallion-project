@@ -1,5 +1,5 @@
 # ms-fabric-hospital-analytics-medallion-project
-“Interactive end-to-end MS Fabric Hospitality Analytics Medallion project: ingest, clean, aggregate data, and visualise business KPIs in Power BI.”
+Interactive end-to-end MS Fabric Hospitality Analytics Medallion project: ingest, clean, aggregate data, and visualise business KPIs in Power BI.
 
 # Overview
 
