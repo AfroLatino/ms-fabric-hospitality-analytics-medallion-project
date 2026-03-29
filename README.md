@@ -57,6 +57,24 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 
 ![Medallion Architecture](PBIReport.png)
 
----
+# Project Structure
+
+ms-fabric-medallion-project/
+│
+├─ README.md
+├─ datasets/
+│ ├─ sales.csv
+│ ├─ labour.csv
+│ ├─ reviews.csv
+│ └─ inventory.csv
+├─ notebooks/
+│ ├─ bronze_ingestion.ipynb
+│ ├─ silver_transforms.ipynb
+│ └─ gold_aggregation.ipynb
+├─ pipelines/
+│ └─ bronze_pipeline.json
+└─ reports/
+└─ powerbi/
+└─ gold_metrics.pbix
 
 
