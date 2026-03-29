@@ -82,5 +82,25 @@ Retail locations struggle to monitor daily operational efficiency because sales 
 │
 └─ images/ Architecture diagram
 └─ architecture.png
+```
 
+# Steps to Reproduce
 
+1. Upload CSV files from `/datasets` into OneLake staging (Files section of Lakehouse)
+
+2. Run Bronze ingestion:
+   - Run Fabric pipeline
+   - Output: Bronze tables (`bronze_sales`, `bronze_labour`, `bronze_reviews`, `bronze_inventory`)
+
+3. Run Silver transformations:
+   - Execute `silver_transforms.ipynb`
+   - Cleans data (removes duplicates, filters invalid values)
+
+4. Run Gold aggregation:
+   - Execute `gold_aggregation.ipynb`
+   - Output table: `gold_daily_metrics`
+
+5. Open Power BI report:
+   - Load `gold_metrics.pbix`
+   - Connect to `gold_daily_metrics`
+   - View dashboard visuals
