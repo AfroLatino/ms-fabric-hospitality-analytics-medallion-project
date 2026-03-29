@@ -37,7 +37,9 @@ Retail locations struggle to monitor daily operational efficiency because sales 
             |  Bronze   |
             |  Raw Data |
             +-----------+
- ![Medallion Architecture](images/architecture.png)
+
+
+ architecture.png
  
 # Tech Stack 
 - Microsoft Fabric
