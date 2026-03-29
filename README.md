@@ -30,8 +30,8 @@ The Medallion Architecture ensures data quality, traceability, and readiness for
 **Bronze Layer (Raw Data)**
 
 - Stores original source files exactly as ingested.
-- Minimal transformations to preserve fidelity.
-Example: Raw sales.csv with all transactions, including duplicates and invalid entries. \
+- Minimal transformations to preserve fidelity. \
+Example: Raw sales.csv with all transactions, including duplicates and invalid entries. 
 
 **Silver Layer (Cleaned / Standardised Data)**
 
